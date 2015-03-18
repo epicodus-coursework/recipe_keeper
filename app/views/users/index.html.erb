@@ -1,3 +1,5 @@
 <h1>Home</h1>
 
 <%= flash[:notice] %>
+
+<%= link_to "Log out", session_path(session), :data => {:method => "delete"} %>
