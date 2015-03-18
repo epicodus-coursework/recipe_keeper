@@ -7,6 +7,9 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bcrypt-ruby', '~> 3.1.5', require: 'bcrypt'
 
 group :development do
   gem 'byebug'
@@ -17,7 +20,6 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 end
 
 group :test do
