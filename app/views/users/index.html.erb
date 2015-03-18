@@ -1,9 +1,9 @@
 <h1>Home</h1>
 
-<%= link_to "Register", new_user_path %>
-
-<%= link_to "Log in", new_session_path %>
+<p><%= link_to "Register", new_user_path %> or <%= link_to "Log in", new_session_path %></p>
 
 <%= flash[:notice] %>
 
-<%= link_to "Log out", session_path(session), :data => {:method => "delete"} %>
+<p><%= link_to "Add recipe", new_user_recipe_path %>
+
+<p><%= link_to "Log out", session_path(session), :data => {:method => "delete"} %></p>
