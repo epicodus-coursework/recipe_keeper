@@ -20,6 +20,13 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
+  def destroy
+    @user = User.find(params[:user_id])
+    @recipe = Recipe.find(params[:id])
+    @recipe.destroy
+    redirect_to user_path(@recipe.user)
+  end
+
 private
   def recipe_params
     params.require(:recipe).permit(:name, :instructions, :ingredients, :photo)

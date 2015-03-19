@@ -1,10 +1,18 @@
 <div class="container"
-<h2><%= @recipe.name %></h2>
-<%= image_tag @recipe.photo.url(:medium) %>
+  <h2><%= @recipe.name %></h2>
+  <%= image_tag @recipe.photo.url(:medium) %>
 
-<p><%= @recipe.ingredients %></p>
+  <p><%= @recipe.ingredients %></p>
 
-<p>
-    <%= @recipe.instructions %>
-</p>
+  <p>
+      <%= @recipe.instructions %>
+  </p>
+
+  <div>
+    <%= link_to "Edit", edit_user_recipe_path(@user, @recipe) %>
+
+    <%= link_to "Delete", user_recipe_path(@user, @recipe),
+                          :data => {:confirm => "You sure?",
+                                    :method => "delete" }%>
+  </div>
 </div>
