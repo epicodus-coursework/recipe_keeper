@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt-ruby', '~> 3.1.5', require: 'bcrypt'
+gem 'paperclip', '~> 4.2'
 
 group :development do
   gem 'byebug'
