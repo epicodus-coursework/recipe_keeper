@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :recipes
+    resources :tags
   end
 
   resources :sessions, :only => [:new, :create, :destroy]
