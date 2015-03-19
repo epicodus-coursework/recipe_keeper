@@ -1,6 +1,6 @@
 <h1>Add a recipe</h1>
 
-<%= form_tag @recipe do |f|%>
+<%= form_for [@user, @recipe] do |f|%>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :ingredients %>
